@@ -1,25 +1,20 @@
-// %AnPro-Regular {
-//   font-family: 'AnonymousPro-Regular', sans-serif;
-//   font-weight: normal;
-//   display: swap;
-// }
+%Roboto-Regular {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
 
-// %AnPro-Bold {
-//   font-family: 'AnonymousPro-Bold', sans-serif;
-//   font-weight: 700
-// }
+%Roboto-Light {
+  font-family: 'Roboto-Light', sans-serif;
+  font-weight: 300;
+}
 
-// %AlGrey-Bold {
-//   font-family: 'AlegreyaSC-Bold', sans-serif;
-//   font-weight: 700;
-// }
+%Roboto-Medium {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
 
-// %AlGrey-Regular {
-//   font-family: 'AlegreyaSC-Regular', sans-serif;
-//   font-weight: normal;
-// }
-
-// $blue: #ABD0D3;
-// $text: #F2F1ED;
-// $background: #3B3B3B;
-// $line: #BCB3A9;
+$yellow: #F1CD09;
+$blue: #34445E;
+$text: #000;
+$background: #EBEBEB;
+$box: rgba(255, 255, 255, 0.7);
