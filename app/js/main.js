@@ -64,6 +64,6 @@ for (let anchor of anchors) {
 }
 
 let secret = document.querySelector('#secret');
-document.querySelector('.contacts__form-btn').onclick = function () {
+document.querySelector('.contact__form-btn').onclick = function () {
     secret.value = 'secretkey';
 }
