@@ -1,42 +1,54 @@
-html{
-  box-sizing: border-box;
+html {
+    box-sizing: border-box;
 }
+
 *,
 *::before,
-*::after{
-  box-sizing: inherit;
+*::after {
+    box-sizing: inherit;
 }
+
 html,
-body{
-  @extend %Roboto-Regular;
-  position: relative;
-  overflow-x: hidden;
-  margin: 0 auto;
-  height: 100%;   
-//   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/
+body {
+    @extend %Roboto-Regular;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0 auto;
+    height: 100%;
+    //   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/
 }
-p{
-  margin: 0;
+
+p {
+    margin: 0;
 }
-h1,h2,h3,h4,h5,h6{
-  margin: 0;
-  font-size: inherit;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
 }
-a{
-  display: inline-block;
-  text-decoration: none;
-  color: inherit
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit
 }
+
 ul,
-li{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-.container{
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 15px;
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 // .title{
@@ -50,10 +62,154 @@ li{
 //     margin-bottom: 56px;
 //     max-width: fit-content;
 // }
+.title {
+    padding: 17px 40px 13px;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: $box;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    border-radius: 5px;
+    color: $blue;
+}
 
-.main-btn{
+
+.global__box-btn {
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-btn {
     padding: 18px 40px;
     border: 2px solid $blue;
     border-radius: 5px;
     color: $blue;
+    font-size: 12px;
+    transition: all .5s;
+    line-height: 16px;
+
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+}
+
+.global__btn-left {
+    background-color: $yellow;
+}
+
+.global__btn-right {
+    background-color: $btn;
+}
+
+
+
+
+.slider {
+    margin-bottom: 30px;
+}
+
+.slider__inner {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.slider__item {
+    margin: 0 25px;
+
+    img {
+        width: 320px;
+        height: 250px;
+        margin: 0 auto;
+    }
+}
+
+// .screen-left,
+// .screen-right {
+//     padding-top: 50px;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.screen-left,
+.screen-right {
+    // background-color: $background;
+    background-color: #ebebeb;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    padding-top: 70px;
+}
+
+.screen-left__item {
+    @extend %Roboto-Light;
+    padding-left: 25px;
+}
+
+.screen-left__item-list,
+.screen-right__item-list {
+    color: #000;
+}
+
+.screen-left__box,
+.screen-right__box {
+    display: flex;
+    justify-content: space-between;
+    background-color: $box;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.screen-left__img,
+.screen-right__img {
+    img {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+}
+
+.screen-left__item-text,
+.screen-right__item-text {
+    margin-bottom: 15px;
+}
+
+.screen-left__item-list,
+.screen-right__item-list {
+    @extend %Roboto-Light;
+    margin-bottom: 15px;
+    list-style: outside;
+    color: #000;
+    margin-left: 25px;
+}
+
+.screen-right__img {
+    order: 1;
+}
+
+.screen-right__item {
+    @extend %Roboto-Light;
+    padding-right: 25px;
 }

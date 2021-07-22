@@ -16,8 +16,8 @@
     }
 
     &__logo {
-        max-width: 29px;
-        height: 29px;
+        max-width: 47px;
+        height: 47px;
         padding: 0;
         margin: 0;
     }
@@ -31,6 +31,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 5;
 }
 
 .menu__wrapper {
@@ -80,6 +81,10 @@
 
 .menu__list {
     display: inline-block;
+    transition: all .3s;
+    &:hover{
+        color: #fff;
+    }
 
     &+.menu__list {
         margin-left: 44px;
@@ -106,14 +111,15 @@
         height: 25px;
     }
 }
+
 .header__main {
     background-image: url(../images/content/bacground.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 950px;
+    min-height: 887px;
     margin-top: 50px;
-    padding-top: 138px;
+    padding-top: 90px;
     padding-bottom: 30px;
 }
 
@@ -147,7 +153,8 @@
     @extend %Roboto-Light;
 }
 
-.header__box-list {
+.header__box-list,
+.concrete__item-list {
     @extend %Roboto-Light;
     margin-bottom: 15px;
     list-style: outside;
@@ -188,5 +195,162 @@
 }
 
 // end header
+.onemargin{
+    padding-bottom: 60px;
+    border-bottom: 3px solid #fff;
+}
+
+// start section contact
+
+.contact{
+    background-color: $background;
+    padding-top: 70px;
+
+}
+.contact__box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.contact__box-inner{
+    max-width: 770px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact__box-item{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+
+
+
+.contact__form{
+    text-align: center;
+}
+.contact__form__inner{
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+}
+.contacts__form-input{
+    width: 100%;
+    max-width: 618px;
+    margin-right: 15px;
+    margin-left: 15px;
+    input {
+        width: 100%;
+        max-width: 618px;
+        border: 2px solid #C4C4C4;
+        padding: 15px;
+        background-color: $box;
+        margin-bottom: 30px;
+        // margin-right: 15px;
+        @extend %Roboto-Regular;
+        font-size: 14px;
+        line-height: 16px;
+        &::placeholder{
+            color: #C4C4C4;
+        }
+    }
+}
+
+.contacts__form-text{
+    width: 100%;
+    max-width: 617px;
+    border: 2px solid #C4C4C4;
+    padding: 15px;
+    background-color: $box;
+    margin-bottom: 30px;
+     @extend %Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    resize: none;
+    &::placeholder {
+        color: #C4C4C4;
+    }
+}
+
+.contact__form-btn {
+    background-color: $yellow;
+    margin-bottom: 30px;
+}
+// end section contact
+
+// start section footer
+
+.header__line.footer__line{
+    position: inherit;
+    background-color: $blue;
+    border-bottom: 2px solid $blue;
+}
+.footer__inner{
+     background-color: $blue;
+     
+}
+
+.footer__menu-list{
+    display: inline-block;
+    color: #fff;
+    @extend %Roboto-Light;
+    transition: all .3s;
+    &:hover {
+        color: $yellow;
+    }
+    &+.footer__menu-list{
+        margin-left: 25px;
+    }
+}
+.footer__social{
+    z-index: 1;
+}
+
+.menu__list.footer-menu__list {
+    display: none;
+}
+// end section footer
+
+.mardvey__line{
+    background-color: $blue;
+    color: #fff;
+    padding: 15px 15px;
+    text-align: center;
+    transition: all .3s;
+    &:hover{
+        color: $yellow;
+    }
+}
+
+
+// start thenk-you
+
+.thank-you__inner{
+    background-color: #ebebeb;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.thank-you__title{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 100px;
+    span{
+        padding-top: 25px;
+        display: block;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+.thank-you__btn{
+    font-size: 15px;
+    background-color: $yellow;
+    text-align: center;
+}
+
+// end thenk-you
 
 @import 'media';
